@@ -1,21 +1,27 @@
 body{
 	font-family: times;
 	animation: change 2s infinite linear;
-
-
+	display: flex;
+	justify-content: center;
+    align-items: center;
 }
 
+
+
 button{
-	position: fixed;
-	top: 50vh;
-	left: 50vw;
+ display: flex;
+    justify-content: center;
+    align-items: center;
 	padding: 10px;
 	font-size: 20px;
 	background: transparent;
+	margin-top:200%;
 
 	background: grey;
 	opacity: 0.5;
 	font-weight: bold;
+
+
 }
 button:hover{
 	opacity: 1;
