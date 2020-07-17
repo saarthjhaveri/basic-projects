@@ -19,7 +19,7 @@ button{
 
 	background: grey;
 	opacity: 0.5;
-	font-weight: bold;
+	
 
 
 }
@@ -27,7 +27,8 @@ button:hover{
 	opacity: 1;
 	background-color: black;
 	color: white;
-	font-style: italic;
+	font-weight: bold;
+	box-shadow: 5px 5px #fff;
 }
 @keyframes change{
 	0%{background-color: : yellow;}
