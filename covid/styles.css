@@ -1,0 +1,43 @@
+body{
+	background: #fff;
+}
+hr{
+	width: 80%;
+}
+
+input{
+	width: 100%;
+	margin-top: 2em ;
+	margin-bottom: 2em;
+	padding: 2vh;
+	border: 1px solid #625555;
+	opacity: 0.5;
+	font-family: times-new;
+	font-size: 1em;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#E2DEDE;
+   color: black;
+   text-align: center;
+   opacity: 0.8;
+
+}
+.footer p{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	top: 0.5em;
+}
+
+tr:hover{
+	opacity: 0.8;
+	transform: scale(1.01);
+}
+.empty{
+	height: 100px;
+}
