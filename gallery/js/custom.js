@@ -2,9 +2,6 @@
 
   $('.gallerys').magnificPopup({
     type: 'image',
-    delegate: 'a',
-    gallery: {
-      enabled: true
-    }
+    delegate: 'a'
   });
 });

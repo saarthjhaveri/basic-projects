@@ -1,20 +1,24 @@
 body{
-	background: #000;
+	background: #fff;
 }
 
-img{
+.gallerys img{
 	
-	width:100%;
 	margin: 20px;
-	opacity:1;
+	opacity:0.5;
+	filter: grayscale(100%);
 }
 
 h1{
 	color: lightgray;
 }
 
-img:hover{
+.gallerys img:hover{
 	transition: 0.5s ease-in;
-	opacity: 0.5;
-
+	opacity:1;
+	filter: grayscale(0);
+	transform: scale(1.1);
 }
+
+
+
