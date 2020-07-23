@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
+    <title> Char-Counter</title>
+
+    <style type="text/css">
+      body{
+        background: #496B6E;
+        font-family: 'Roboto Slab', serif;
+      }
+      .mainArea{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #characters{
+
+        height: 50%;
+        width: 50%;
+        padding: 10px 2px;
+        border: 2px solid #A7B3B0;
+        border-radius: 10px ;
+        outline: none;
+        box-shadow: 0px 0px 5px #000;
+        background: #B7FAEA;
+        color: #0C3059;
+        font-size: 1.2rem;
+
+      }
+
+      button{
+        background: #B7FAEA;
+        padding: 1% 2%;
+        border: 2px solid #000;
+        outline: none;
+        box-shadow: 0px 0px 5px #000;
+
+      }
+      button:hover{
+        box-shadow: 0px 0px 20px #000;
+        transform: scale(1.1);
+        opacity: 0.5;
+        background: #34EE8B;
+
+      }
+
+      h1{
+        color:#28E580;
+        font-weight: bolder;
+      }
+
+      #demo{
+        font-size: 2vw;
+        padding: 10px 2px;
+        color: #B7F768;
+        transition: ease-in 1s;
+        
+      }
+
+      @media (max-width: 492px)
+      {
+        .mainArea{
+          height: 100vh;
+        }
+        #demo{
+          font-size: 7vw;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+    <h1 class="text-center display-4">Character Counter</h1>
+    <hr>
+
+
+    <div class="row mainArea">
+      <textarea row="10" columns="50" id="characters" ></textarea>
+
+      <p id="demo"> </p>
+
+      <button onclick="totalCharacters()">Count!</button>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript">
+      function totalCharacters(){
+        var result= document.getElementById('characters').value.length;
+        document.getElementById('demo').innerHTML= "Total " + result +" characters";
+      }
+      
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
